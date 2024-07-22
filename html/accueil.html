@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil - Zoo Arcadia</title>
+    <link rel="stylesheet" href="/css/style_accueil.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- barre de navigation --> 
+    <header>
+        <div class="container">
+            <div class="content">
+                <img src="/zebres2.jpg" alt="zebre">
+                <div class="nav">
+                    <h1>Arcadia</h1>
+                    <nav>
+                        <ul>
+                            <label for="bascule">Menu</label>
+                            <input type="checkbox" id="bascule">
+                                <ul class="menu">
+                                    <li><a href="../html/accueil.html">Accueil</a></li>
+                                    <li><a href="../html/service.html">Nos services</a></li>
+                                    <li><a href="../html/habitat_animaux.html">Habitats et animaux</a></li>
+                                    <li><a href="../html/horaires_tarifs.html">Horaires et tarifs</a></li>
+                                    <li><a id="cnx" href="../html/connexion.html">Connexion</a></li>
+                                </ul>
+                        </ul>        
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- contenu de la page -->
+    <main>
+        <div class="qsn">
+            <h2 class="titrem">Qui sommes nous ?</h2>
+            <p class="textm">Situé près de la forêt de Brocéliande en Bretagne depuis 1960, 
+            Arcadia est un zoo offrant 120 hectares de semi-liberté aux animaux 
+            réparti en 3 habitats. </p>
+        </div>
+        <div class="sv">
+            <h2 class="titreb">Saviez-vous</h2>
+            <p class="textb">Chaque jour, plusieurs vétérinaires viennent afin d’effectuer les contrôles
+            sur chaque animal avant l’ouverture du zoo afin de s’assurer que tout se passe bien,
+            de même, toute la nourriture donnée est calculée afin d’avoir le bon grammage.</p>
+        </div>
+        <div class="align">
+            <div class="sha">
+                <h2 class="titrem">Nos services</h2>
+                <div class="fond">
+                    <p>Notre zoo comporte divers services comme des zones de <span>restauration</span> et 
+                    des <span>visites gratuites</span>.<br><img src="/restaurant.jpg" alt="restaurant"></p>
+                </div>
+            </div>
+            <div class="sha">
+                <h2 class="titrem">Nos habitats</h2>
+                <div class="fond">
+                    <p>Decouvrez les différents habitats qui composent notre zoo :
+                    parmi eux, la <span>savane</span> et la <span>forêt</span>.<br>
+                    <img src="/ecureuil.jpg" alt="ecureuil"></p>
+                </div>
+            </div>
+            <div class="sha">
+                <h2 class="titrem">Nos animaux</h2>
+                <div class="fond">
+                    <p>Les animaux sont l’âme de notre zoo.
+                    Rendez visite à nos <span>mammifères</span> et nos <span>reptiles</span>.
+                    <br><img src="/elephants.jpg" alt="elephants"></p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="fondAvis">
+            <h2>Vos avis</h2>
+            <form method="post">
+                <div class="fondAvism">
+                    <div class="fondAvisn">
+                        <p class="p_avis">Rédiger un avis</p><hr>
+                        <div>
+                            <input class="pseudo" type="text" id="pseudo" name="Pseudo" placeholder="Pseudo" required><hr>
+                        </div>
+                        <div>
+                            <label for="avis"></label>
+                            <textarea class="avis" type="text" id="avis" name="Avis" placeholder="Votre avis..." rows="4" required></textarea>  
+                        </div>
+                        <div>
+                            <input id="btn_avis" type="submit" value="Envoyer">
+                        </div>
+                    </div>
+                    <div class="fondAvisn">
+                        <p class="p_avis">Avis visiteur</p><hr>
+                        <div>
+                            <p class="pseudo"> Jojo07</p><hr>
+                        </div>
+                        <div>
+                            <p class="avis">Experience incroyable. Les habitats sont magnifiques, surtout la savane qui offre une grande liberté aux animaux.</p>  
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div class="fond_footer">
+                <div class="fond_cnt">
+                    <div class="contact">
+                        <p><span>Contact</span></p>
+                        <p>contact@zooarcadia.fr</p>
+                    </div>
+                    <div class="nous_trouver">
+                        <p><span>Nous trouver</span></p>
+                        <p>16 Allée d'Arcadia, 35380 Paimpont</p>
+                    </div>
+                </div>
+                <div class="tdr">
+                    <p>© 2024 Arcadia - Tous droits réservés</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="/js/avis.js"></script>
+</body>
+</html>
