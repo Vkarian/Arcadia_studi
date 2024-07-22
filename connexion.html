@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion - Zoo Arcadia</title>
+    <link rel="stylesheet" href="/css/style_connexion.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- barre de navigation --> 
+    <header>
+        <div class="nav">
+            <h1>Arcadia</h1>
+            <nav>
+                <ul>
+                    <label for="bascule">Menu</label>
+                    <input type="checkbox" id="bascule">
+                        <ul class="menu">
+                            <li><a href="../html/accueil.html">Accueil</a></li>
+                            <li><a href="../html/service.html">Nos services</a></li>
+                            <li><a href="../html/habitat_animaux.html">Habitats et animaux</a></li>
+                            <li><a href="../html/horaires_tarifs.html">Horaires et tarifs</a></li>
+                            <li><a id="cnx" href="../html/connexion.html">Connexion</a></li>
+                        </ul>
+                </ul>        
+            </nav>
+        </div>
+    </header>
+
+    <!-- contenu de la page -->
+     <section>
+        <div class="container">
+            <h2>Connexion</h2>
+            <form method="post">
+                <div class="box">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="box">
+                    <label for="password">Mot de passe</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="loginBtn">
+                    <input type="submit" id="btn_connexion" value="Se connecter">
+                </div>
+            </form>
+        </div>
+     </section>
+     <script src="/js/connexion.js"></script>
+</body>
+</html>
