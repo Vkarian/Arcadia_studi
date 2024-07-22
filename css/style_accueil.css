@@ -1,0 +1,1038 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+/*ecran desktop*/
+
+@media screen and (min-width: 1024px) {
+
+    /*barre de navigation - header*/
+
+    .content img {
+        width: 100%;
+        height: auto;
+    }
+
+    .content {
+        width: 100%;
+        position: relative;  
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .nav {
+        width: 100%;
+        position: fixed;
+        top: 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    ul.menu {
+        display: flex;
+        align-items: center;
+    }
+
+    ul.menu li {
+        list-style: none;
+        margin: 1em;
+        text-align: center;
+    }
+
+    ul.menu a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.3em;
+        font-weight: bold;
+    }
+
+    ul.menu a:hover {
+        text-decoration: underline;
+    }
+
+    ul.menu #cnx:hover {
+        text-decoration: underline;
+    }
+    
+    h1, #cnx {
+        color: #50A15D;
+    }
+    
+    h1 {
+        margin: 0.8em;
+        font-size: 2.2em;
+        font-family: "shantell sans", sans-serif; 
+    }
+    
+    #cnx {
+        margin: 0.8em;
+    }
+
+    label, #bascule {
+        display: none;
+    }
+
+    /*contenu de la page d'accueil*/
+
+    .qsn .titrem {
+        padding-left: 2em;
+        padding-top: 1em;
+    }
+    
+    .sv {
+        color: white;
+        background-color: #50A15D;
+        padding: 3em;
+        margin-bottom: 1em;
+        text-align: center;
+        font-style: italic;
+        font-size: 20px;
+        box-shadow: 0px 10px 10px grey;
+    }
+    
+    .titreb {
+        padding-bottom: 1em;
+        font-size: 30px;
+        font-family: "shantell sans", sans-serif; 
+    }
+    
+    .align {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: flex-start;
+        
+    }
+    
+    .titrem{
+        color: #7B4E24;
+        font-size: 1.8em;
+        font-family: "shantell sans", sans-serif; 
+    }
+    
+    .textm {
+        color: #7B4E24;
+        background-color: #E9E3AF;
+        border-radius: 2em;
+        margin-left: 3em;
+        margin-right: 3em;
+        margin-top: 1.5em;
+        margin-bottom: 1.5em;
+        padding: 1.8em;
+        font-size: 20px;
+        text-align: center;
+        box-shadow: 0px 10px 10px grey;
+    }
+    
+    .sha .titrem {
+        padding-top: 1em;
+    }
+
+    p img {
+        height: 150px;
+        width: 220px;
+        margin-top: 1em;
+        border-radius: 15px;
+    }
+
+
+    .fond {
+       background-color: #E9E3AF;
+       padding: 1.2em;
+       border-radius: 2em;
+       margin: 1em;
+       width: 240px;
+       height: 280px;
+       text-align: center;
+       color: #7B4E24;
+       font-size: 20px;
+       box-shadow: 0px 10px 10px grey;
+    }
+    
+    span {
+        font-weight: bold;
+    }
+
+    #fondAvis {
+        color: white;
+        background-color: #50A15D;
+    }
+
+    #fondAvis h2 {
+        text-align: center;
+        padding-top: 2em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        font-size: 30px;
+        font-family: "shantell sans", sans-serif; 
+    }
+
+    .fondAvism {
+        background-color: #7B4E24;
+        border-radius: 2em;
+        margin: auto;
+        margin-bottom: 2em;
+        height: 280px;
+        width: 800px;
+        display: flex;
+        box-shadow: 0px 10px 10px #1E1E1E;
+    }
+
+    .fondAvisn {
+        background-color: #1E1E1E;
+        border-radius: 1.5em;
+        width: 350px;
+        height: 200px;
+        margin: 1em;
+        padding: 1em;
+        color: white;
+        font-size: 20px;
+    }
+
+    .p_avis {
+        padding-bottom: 1em;
+        text-align: center;
+    }
+
+    .avis, .pseudo {
+        margin-top: 0.3em;
+        margin-bottom: 0.3em;
+        padding: 0.2em;
+        background-color: #1E1E1E;
+        border: #1E1E1E;
+        width: 300px;
+        color: white;
+        resize: none;
+        font-size: 16px;
+    }
+
+    .pseudo:focus, .avis:focus {
+        outline: none;
+    }
+
+    #btn_avis {
+        background-color: #50A15D;
+        color: white;
+        border: none;
+        border-radius: 2em;
+        padding: 0.5em;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+
+    #btn_avis:hover {
+        background-color: white;
+        color: #50A15D;
+        box-shadow: 0px 0px 10px #50A15D;
+    }
+
+    .fond_footer {
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 2.5em;
+        font-size: 15px;
+    }
+
+    .fond_cnt {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .tdr {
+        margin-top: 2em;
+        text-align: center;
+    }
+
+    .contact p, .nous_trouver p {
+        padding: 0.2em;
+    }
+}
+
+/*ecran tablette*/
+
+@media screen and (min-width: 820px) and (max-width: 1024px) {
+    
+    /*barre de navigation - header*/
+
+    .content img {
+        width: 100%;
+        height: auto;
+    }
+
+    .content {
+        width: 100%;
+        position: relative;  
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .nav {
+        width: 100%;
+        position: fixed;
+        top: 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    ul.menu {
+        display: flex;
+        align-items: center;
+    }
+
+    ul.menu li {
+        list-style: none;
+        margin: 1em;
+        text-align: center;
+    }
+
+    ul.menu a {
+        text-decoration: none;
+        color: white;
+        font-size: 0.9em;
+        font-weight: bold;
+    }
+
+    ul.menu a:hover {
+        text-decoration: underline;
+    }
+
+    ul.menu #cnx:hover {
+        text-decoration: underline;
+    }
+    
+    h1, #cnx {
+        color: #50A15D;
+    }
+    
+    h1 {
+        margin: 0.8em;
+        font-size: 1.6em;
+        font-family: "shantell sans", sans-serif; 
+    }
+    
+    #cnx {
+        margin: 0.8em;
+    }
+
+    label, #bascule {
+        display: none;
+    }
+
+    /*contenu de la page d'accueil*/
+
+    .qsn .titrem {
+        padding-left: 2em;
+        padding-top: 1em;
+    }
+    
+    .sv {
+        color: white;
+        background-color: #50A15D;
+        padding: 3em;
+        margin-bottom: 1em;
+        text-align: center;
+        font-style: italic;
+        font-size: 15px;
+        box-shadow: 0px 10px 10px grey;
+    }
+    
+    .titreb {
+        padding-bottom: 1em;
+        font-size: 20px;
+        font-family: "shantell sans", sans-serif; 
+    }
+    
+    .align {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: flex-start;
+        
+    }
+    
+    .titrem{
+        color: #7B4E24;
+        font-size: 1.4em;
+        font-family: "shantell sans", sans-serif; 
+    }
+    
+    .textm {
+        color: #7B4E24;
+        background-color: #E9E3AF;
+        border-radius: 2em;
+        margin-left: 3em;
+        margin-right: 3em;
+        margin-top: 1.5em;
+        margin-bottom: 1.5em;
+        padding: 1.8em;
+        font-size: 15px;
+        text-align: center;
+        box-shadow: 0px 10px 10px grey;
+    }
+    
+    .sha .titrem {
+        padding-top: 1em;
+    }
+
+    p img {
+        height: 120px;
+        width: 180px;
+        margin-top: 1em;
+        border-radius: 15px;
+    }
+
+    .fond {
+        background-color: #E9E3AF;
+        padding: 1.2em;
+        border-radius: 2em;
+        margin: 0.8em;
+        width: 200px;
+        height: 220px;
+        text-align: center;
+        color: #7B4E24;
+        font-size: 15px;
+        box-shadow: 0px 10px 10px grey;
+    }
+    
+    span {
+        font-weight: bold;
+    }
+
+    #fondAvis {
+        color: white;
+        background-color: #50A15D;
+    }
+
+    #fondAvis h2 {
+        text-align: center;
+        padding-top: 2em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        font-size: 20px;
+        font-family: "shantell sans", sans-serif; 
+    }
+
+    .fondAvism {
+        background-color: #7B4E24;
+        border-radius: 2em;
+        margin: auto;
+        margin-bottom: 2em;
+        height: auto;
+        width: 540px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 0px 10px 10px #1E1E1E;
+    }
+
+    .fondAvisn {
+        background-color: #1E1E1E;
+        border-radius: 1.5em;
+        width: 300px;
+        height: 180px;
+        margin: 1em;
+        padding: 1.5em;
+        color: white;
+        font-size: 15px;
+    }
+
+    .p_avis {
+        padding-bottom: 1em;
+        text-align: center;
+    }
+
+    .avis, .pseudo {
+        margin-top: 0.3em;
+        margin-bottom: 0.3em;
+        padding: 0.2em;
+        background-color: #1E1E1E;
+        border: #1E1E1E;
+        width: 300px;
+        color: white;
+        resize: none;
+    }
+
+    .pseudo:focus, .avis:focus {
+        outline: none;
+    }
+
+    #btn_avis {
+        background-color: #50A15D;
+        color: white;
+        border: none;
+        border-radius: 2em;
+        padding: 0.5em;
+        margin-top: 1em;
+        cursor: pointer;
+        transition: 0.5s;    
+    }
+
+    #btn_avis:hover {
+        background-color: white;
+        color: #50A15D;
+        box-shadow: 0px 0px 10px #50A15D;
+    }
+
+    .fond_footer {
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 2.5em;
+        font-size: 15px;
+    }
+
+    .fond_cnt {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .tdr {
+        margin-top: 2em;
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .contact p, .nous_trouver p {
+        padding: 0.2em;
+        font-size: 15px;
+    }
+}
+
+/*ecran smartphone*/
+
+@media screen and (min-width: 460px) and (max-width: 820px) {
+    
+    /*barre de navigation - header*/
+
+    .content img {
+        width: 100%;
+        height: auto;
+    }
+
+    .content {
+        width: 100%;
+        position: relative;  
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .nav {
+        width: 100%;
+        position: fixed;
+        top: 0px;
+        display: column;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    ul.menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    ul.menu li {
+        list-style: none;
+        margin: 0.6em;
+        text-align: center;
+    }
+
+    ul.menu a {
+        text-decoration: none;
+        color: white;
+        font-size: 0.8em;
+        font-weight: bold;
+    }
+
+    ul.menu a:hover {
+        text-decoration: underline;
+    }
+
+    ul.menu #cnx:hover {
+        text-decoration: underline;
+    }
+    
+    h1, #cnx {
+        color: #50A15D;
+    }
+    
+    h1 {
+        margin-top: 0.5em;
+        font-size: 1.6em;
+        text-align: center;
+        font-family: "shantell sans", sans-serif; 
+    }
+
+    label, #bascule {
+        display: none;
+    }
+
+    /*contenu de la page d'accueil*/
+
+    .qsn .titrem {
+        padding-left: 2em;
+        padding-top: 1em;
+    }
+    
+    .sv {
+        color: white;
+        background-color: #50A15D;
+        padding: 3em;
+        margin-bottom: 1em;
+        text-align: center;
+        font-style: italic;
+        font-size: 15px;
+        box-shadow: 0px 10px 10px grey;
+    }
+    
+    .titreb {
+        padding-bottom: 1em;
+        font-size: 20px;
+        font-family: "shantell sans", sans-serif; 
+    }
+    
+    .align {
+        display: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    .titrem{
+        color: #7B4E24;
+        font-size: 1.4em;
+        font-family: "shantell sans", sans-serif; 
+    }
+    
+    .textm {
+        color: #7B4E24;
+        background-color: #E9E3AF;
+        border-radius: 2em;
+        margin-left: 3em;
+        margin-right: 3em;
+        margin-top: 1.5em;
+        margin-bottom: 1.5em;
+        padding: 1.8em;
+        font-size: 15px;
+        text-align: center;
+        box-shadow: 0px 10px 10px grey;
+    }
+    
+    .sha .titrem {
+        padding-top: 1.2em;
+    }
+
+    p img {
+        height: 150px;
+        width: 220px;
+        margin-top: 1em;
+        border-radius: 15px;
+    }
+
+    .fond {
+        background-color: #E9E3AF;
+        padding: 1.2em;
+        border-radius: 2em;
+        margin: auto;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        width: 260px;
+        text-align: center;
+        color: #7B4E24;
+        font-size: 15px;
+        box-shadow: 0px 10px 10px grey;
+    }
+
+    span {
+        font-weight: bold;
+    }
+
+    #fondAvis {
+        color: white;
+        background-color: #50A15D;
+    }
+
+    #fondAvis h2 {
+        text-align: center;
+        padding-top: 2em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        font-size: 20px;
+        font-family: "shantell sans", sans-serif; 
+    }
+
+    .fondAvism {
+        background-color: #7B4E24;
+        border-radius: 2em;
+        margin: auto;
+        margin-bottom: 2em;
+        height: auto;
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 0px 10px 10px #1E1E1E;
+    }
+
+    .fondAvisn {
+        background-color: #1E1E1E;
+        border-radius: 1.5em;
+        width: 280px;
+        height: 170px;
+        margin: 1em;
+        padding: 1em;
+        color: white;
+        font-size: 13px;
+    }
+
+    .p_avis {
+        padding-bottom: 1em;
+        text-align: center;
+    }
+
+    .avis, .pseudo {
+        margin-top: 0.3em;
+        margin-bottom: 0.3em;
+        padding: 0.2em;
+        background-color: #1E1E1E;
+        border: #1E1E1E;
+        width: 270px;
+        color: white;
+        resize: none;
+    }
+
+    .pseudo:focus, .avis:focus {
+        outline: none;
+    }
+
+    #btn_avis {
+        background-color: #50A15D;
+        color: white;
+        border: none;
+        border-radius: 2em;
+        padding: 0.5em;
+        cursor: pointer;
+        transition: 0.5s;    
+    }
+
+    #btn_avis:hover {
+        background-color: white;
+        color: #50A15D;
+        box-shadow: 0px 0px 10px #50A15D;
+    }
+
+    .fond_footer {
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 2.5em;
+        font-size: 15px;
+    }
+
+    .fond_cnt {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .tdr {
+        margin-top: 2em;
+        text-align: center;
+    }
+
+    .contact p, .nous_trouver p {
+        padding: 0.2em;
+    }
+}
+
+/*ecran smartphone 2*/
+
+@media screen and (max-width: 460px) {
+
+    /*barre de navigation - header*/
+
+    .content img {
+        width: 100%;
+        height: auto;
+    }
+
+    .content {
+        width: 100%;
+        position: relative;  
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .nav {
+        width: 100%;
+        position: fixed;
+        top: 0px;
+        display: column;
+        justify-content: space-around;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    label {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        font-size: 15px;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 0.6em;
+        padding-top: 0.2em;
+    }
+
+    #bascule + .menu{
+        display: none;
+    }
+
+    #bascule:checked + .menu {
+        display: block;
+    }
+
+    label:hover {
+        text-decoration: underline;
+    }
+
+    #bascule {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 0.9em;
+        font-weight: bold;
+        margin-bottom: 0.5em;
+    }
+
+    ul.menu {
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    ul.menu li {
+        list-style: none;
+        margin: 1em;
+        text-align: center;
+    }
+
+    ul.menu a {
+        text-decoration: none;
+        color: white;
+        font-size: 0.8em;
+        font-weight: bold;
+    }
+
+    ul.menu a:hover {
+        text-decoration: underline;
+    }
+
+    ul.menu #cnx:hover {
+        text-decoration: underline;
+    }
+    
+    h1, #cnx {
+        color: #50A15D;
+    }
+    
+    h1 {
+        font-weight: bold;
+        font-size: 1.6em;
+        text-align: center;
+        padding-top: 0.2em;
+        font-family: "shantell sans", sans-serif; 
+    }
+
+    #bascule {
+        display: none;
+    }
+
+    /*contenu de la page d'accueil*/
+
+    .qsn .titrem {
+        padding-top: 1em;
+        text-align: center;
+    }
+    
+    .sv {
+        color: white;
+        background-color: #50A15D;
+        padding: 3em;
+        margin-bottom: 1em;
+        text-align: center;
+        font-style: italic;
+        font-size: 15px;
+        box-shadow: 0px 10px 10px grey;
+    }
+    
+    .titreb {
+        padding-bottom: 1em;
+        font-size: 20px;
+        font-family: "shantell sans", sans-serif; 
+    }
+    
+    .align {
+        display: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    .titrem{
+        color: #7B4E24;
+        font-size: 1.4em;
+        font-family: "shantell sans", sans-serif; 
+    }
+    
+    .textm {
+        color: #7B4E24;
+        background-color: #E9E3AF;
+        border-radius: 2em;
+        margin-left: 3em;
+        margin-right: 3em;
+        margin-top: 1.5em;
+        margin-bottom: 1.5em;
+        padding: 1.8em;
+        font-size: 15px;
+        text-align: center;
+        box-shadow: 0px 10px 10px grey;
+    }
+    
+    .sha .titrem {
+        padding-top: 1em;
+    }
+
+    p img {
+        height: 100px;
+        width: 150px;
+        margin-top: 1em;
+        border-radius: 15px;
+    }
+
+    .fond {
+        background-color: #E9E3AF;
+        padding: 1em;
+        border-radius: 2em;
+        margin: auto;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        width: 170px;
+        text-align: center;
+        color: #7B4E24;
+        font-size: 15px;
+        box-shadow: 0px 10px 10px grey;
+    }
+    
+    span {
+        font-weight: bold;
+    }
+
+    #fondAvis {
+        color: white;
+        background-color: #50A15D;
+    }
+
+    #fondAvis h2 {
+        text-align: center;
+        padding-top: 2em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        font-size: 20px;
+        font-family: "shantell sans", sans-serif; 
+    }
+
+    .fondAvism {
+        background-color: #7B4E24;
+        border-radius: 2em;
+        margin: auto;
+        margin-bottom: 2em;
+        height: auto;
+        width: 230px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 0px 10px 10px #1E1E1E;
+    }
+
+    .fondAvisn {
+        background-color: #1E1E1E;
+        border-radius: 1.5em;
+        width: 160px;
+        height: 200px;
+        margin: 1em;
+        padding: 1em;
+        color: white;
+        font-size: 14px;
+    }
+
+    .p_avis {
+        padding-bottom: 1em;
+        text-align: center;
+    }
+
+    .avis, .pseudo {
+        margin-top: 0.3em;
+        margin-bottom: 0.3em;
+        padding: 0.2em;
+        background-color: #1E1E1E;
+        border: #1E1E1E;
+        width: 150px;
+        color: white;
+        resize: none;
+    }
+
+    .pseudo:focus, .avis:focus {
+        outline: none;
+    }
+
+    #btn_avis {
+        background-color: #50A15D;
+        color: white;
+        border: none;
+        border-radius: 2em;
+        padding: 0.5em;
+        margin-top: 1.1em;
+        cursor: pointer;
+        transition: 0.5s;    
+    }
+
+    #btn_avis:hover {
+        background-color: white;
+        color: #50A15D;
+        box-shadow: 0px 0px 10px #50A15D;
+    }
+
+    .fond_footer {
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 2.5em;
+        font-size: 14px;
+    }
+
+    .fond_cnt {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .tdr {
+        margin-top: 2em;
+        text-align: center;
+    }
+
+    .contact p, .nous_trouver p {
+        padding: 0.2em;
+    }
+}
